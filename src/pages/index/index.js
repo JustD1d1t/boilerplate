@@ -1,6 +1,6 @@
-import HelloWorldButton from "./components/hello-world-button/hello-world-button.js";
-import LogoImage from "./components/add-image/add-image.js";
-import Heading from "./components/heading/heading.js";
+import HelloWorldButton from "../../components/hello-world-button/hello-world-button.js";
+import LogoImage from "../../components/add-image/add-image.js";
+import Heading from "../../components/heading/heading.js";
 import React from "react";
 
 const heading = new Heading();

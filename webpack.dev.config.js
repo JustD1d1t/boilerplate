@@ -5,8 +5,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    index: ["./src/index.js", "./src/index.scss"],
-    kiwi: ["./src/kiwi.js", "./src/index2.scss"],
+    index: ["./src/pages/index/index.js", "./src/pages/index/index.scss"],
+    kiwi: ["./src/pages/kiwi/kiwi.js", "./src/pages/kiwi/index2.scss"],
   },
   output: {
     filename: "[name]/index.js",
@@ -75,14 +75,14 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
+      template: "./src/pages/index/index.html",
       filename: "index.html",
       chunks: ["index"],
       inject: true,
     }),
     new HtmlWebpackPlugin({
-      template: "./src/kiwi.html",
-      filename: "kiwi.html",
+      template: "./src/pages/kiwi/index.html",
+      filename: "kiwi/index.html",
       chunks: ["kiwi"],
       inject: true,
     }),
