@@ -39,6 +39,9 @@ module.exports = {
             maxSize: 3 * 1024,
           },
         },
+        generator: {
+          filename: "resources/svg/[name][ext]",
+        },
       },
       {
         test: /\.(png|jpg)$/,
@@ -47,6 +50,9 @@ module.exports = {
           dataUrlCondition: {
             maxSize: 3 * 1024,
           },
+        },
+        generator: {
+          filename: "resources/images/[name][ext]",
         },
       },
       {
