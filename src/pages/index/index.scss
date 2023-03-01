@@ -1,4 +1,7 @@
-// @import "./components/**/*.scss";
+@import "../../styles/main";
+@import "../../styles/override-bootstrap";
+@import "~bootstrap/scss/bootstrap";
+@import 'bootstrap';
 body {
     font-size: 22px;
 }

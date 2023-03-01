@@ -59,7 +59,17 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              additionalData: '@import "./src/styles/_variables.scss"; @import "./src/components/footer/_footer.scss"; @import "./src/components/nav/nav.scss";',
+            },
+          },
+        ],
       },
       {
         test: /\.js$/,
