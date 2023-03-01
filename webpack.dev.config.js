@@ -66,7 +66,8 @@ module.exports = {
           {
             loader: "sass-loader",
             options: {
-              additionalData: '@import "./src/styles/_variables.scss"; @import "./src/components/footer/_footer.scss"; @import "./src/components/nav/nav.scss";',
+              additionalData:
+                '@import "bootstrap"; @import "./src/styles/_main.scss"; @import "./src/styles/_override-bootstrap.scss"; @import "./src/styles/_variables.scss"; @import "./src/components/footer/_footer.scss"; @import "./src/components/nav/nav.scss";',
             },
           },
         ],
