@@ -32,6 +32,15 @@ module.exports = {
         loader: "import-glob-loader",
       },
       {
+        test: /\.(svg)$/,
+        type: "asset",
+        parser: {
+          dataUrlCondition: {
+            maxSize: 3 * 1024,
+          },
+        },
+      },
+      {
         test: /\.(png|jpg)$/,
         type: "asset",
         parser: {
