@@ -99,6 +99,9 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name]/index.css",
     }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: "src/resources", to: "resources" }],
+    }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./src/pages/index/index.html",
